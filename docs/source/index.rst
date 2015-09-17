@@ -3,17 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to alight's documentation!
+Angular Light
 ==================================
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   directives
-   faq
-
+   api.rst
+   scope.rst
+   create_directive.rst
+   directive.rst
+   text_binding.rst
+   filter.rst
+   one_time_binding.rst
+   faq.rst
 
 
 Indices and tables
