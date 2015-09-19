@@ -16,18 +16,16 @@ Contents:
    create_directive.rst
    inheritance_directive.rst
    directive.rst
+   filter.rst
+   create_filter.rst
    text_binding.rst
    text_directive.rst
    one_time_binding.rst
+   isolated_mode.rst
+   namespace.rst
+   binding_to_dom.rst
+   directive_preprocessor.rst
    faq.rst
-
-   filter.rst
-
-   A few ways to bind a model to the DOM
-   Directive preprocessor
-   Isolated Angular Light
-   Namespaces
-
 
 Indices and tables
 ==================
