@@ -17,6 +17,7 @@ Contents:
    inheritance_directive.rst
    directive.rst
    text_binding.rst
+   text_directive.rst
    filter.rst
    one_time_binding.rst
    faq.rst
