@@ -32,3 +32,7 @@ FAQ
     `Call a method <http://jsfiddle.net/lega911/msaLght8/>`_
 * Where is al-select directive?
     `Here <http://angularlight.org/doc/examples.html#search=select>`_ a few examples with select control.
+* Can I rename directives?
+    Yes, :code:`alight.directives.al.myKeypress = alight.directives.al.keypress`
+* How to call my function when Scope.$scan finish digets process?
+    You can pass your function as callback :code:`Scope.$scan(callback)`
