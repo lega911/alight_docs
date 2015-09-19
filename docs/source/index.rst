@@ -18,9 +18,15 @@ Contents:
    directive.rst
    text_binding.rst
    text_directive.rst
-   filter.rst
    one_time_binding.rst
    faq.rst
+
+   filter.rst
+
+   A few ways to bind a model to the DOM
+   Directive preprocessor
+   Isolated Angular Light
+   Namespaces
 
 
 Indices and tables
