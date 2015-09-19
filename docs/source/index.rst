@@ -14,6 +14,7 @@ Contents:
    api.rst
    scope.rst
    create_directive.rst
+   inheritance_directive.rst
    directive.rst
    text_binding.rst
    filter.rst
