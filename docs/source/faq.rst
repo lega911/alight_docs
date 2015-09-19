@@ -36,3 +36,5 @@ FAQ
     Yes, :code:`alight.directives.al.myKeypress = alight.directives.al.keypress`
 * How to call my function when Scope.$scan finish digets process?
     You can pass your function as callback :code:`Scope.$scan(callback)`
+* How to redraw bind-once?
+    `Example <http://jsfiddle.net/lega911/wRA7L/>`_
