@@ -4,7 +4,7 @@ Create filters
 Overview
 --------
 
-A filter should be placed in **alight.filters** (you can change path with *alight.getFilter*), of in scope.$ns for private filters.
+A filter should be placed in **alight.filters** (you can change path with *alight.getFilter*), or in scope.$ns for private filters.
 
 .. code-block:: javascript
     :caption: Example filter

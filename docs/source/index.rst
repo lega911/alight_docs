@@ -18,6 +18,7 @@ Contents:
    directive.rst
    filter.rst
    create_filter.rst
+   async_filter.rst
    text_binding.rst
    text_directive.rst
    one_time_binding.rst
@@ -27,10 +28,4 @@ Contents:
    directive_preprocessor.rst
    faq.rst
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+`Examples <http://angularlight.org/doc/examples.html>`_
