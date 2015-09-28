@@ -38,3 +38,6 @@ FAQ
     You can pass your function as callback :code:`Scope.$scan(callback)`
 * How to redraw bind-once?
     `Example <http://jsfiddle.net/lega911/wRA7L/>`_
+
+.. raw:: html
+   :file: discus.html

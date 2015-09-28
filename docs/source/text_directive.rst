@@ -41,3 +41,6 @@ Examples
 * `Information output delay <http://jsfiddle.net/lega911/Y6QA4/>`_
 * `An counter <http://jsfiddle.net/lega911/es8ph/>`_
 * `Sample with bindonce <http://jsfiddle.net/lega911/Q4cnM/>`_
+
+.. raw:: html
+   :file: discus.html

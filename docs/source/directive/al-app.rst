@@ -22,3 +22,6 @@ Examples
 
 * `One tag for different DOM <http://jsfiddle.net/lega911/ozk1gytu/>`_
 * `Using tag and access to scope from outside <http://jsfiddle.net/lega911/hSHKZ/>`_
+
+.. raw:: html
+   :file: ../discus.html

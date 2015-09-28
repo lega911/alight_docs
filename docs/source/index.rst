@@ -29,3 +29,6 @@ Contents:
    faq.rst
 
 `Examples <http://angularlight.org/doc/examples.html>`_
+
+.. raw:: html
+   :file: discus.html

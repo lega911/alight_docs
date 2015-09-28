@@ -26,3 +26,6 @@ also you can place the controller into **alight.controllers** or in Scope.$ns fo
 
     alight.controllers.bookCtrl = function(scope) {
     }
+
+.. raw:: html
+   :file: ../discus.html

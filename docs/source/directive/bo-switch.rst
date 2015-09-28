@@ -15,3 +15,6 @@ Overview
         <div bo-switch-when="two"></div>
         <div bo-switch-default></div>
     </div>
+
+.. raw:: html
+   :file: ../discus.html

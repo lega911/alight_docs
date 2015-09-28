@@ -44,3 +44,6 @@ Examples of inheritance
 * al-repeat, `add "$even", "$odd" into the directive <http://jsfiddle.net/lega911/zR3as/>`_
 * al-repeat, `change input expression <http://jsfiddle.net/lega911/rB7y2/>`_ my-repeat="list.foreach item"
 * al-repeat, `change rendering <http://jsfiddle.net/lega911/U7XTL/>`_
+
+.. raw:: html
+   :file: discus.html

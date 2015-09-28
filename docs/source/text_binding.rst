@@ -26,3 +26,6 @@ If you can't use tags ``{{ }}``, you can change this to ``{# #}``, ``{< >}``, ``
     alight.utilits.pars_finish_tag = '#}';
 
 For complex text bindings you can use `text directives <text_directive.html>`_
+
+.. raw:: html
+   :file: discus.html

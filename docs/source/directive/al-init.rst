@@ -11,3 +11,6 @@ Overview
    :caption: Examples
 
     <div al-init="menu='main'; count=7;"></div>
+
+.. raw:: html
+   :file: ../discus.html

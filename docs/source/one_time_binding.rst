@@ -19,3 +19,6 @@ Examples
 
 * `Sample with declarative bindings <http://jsfiddle.net/lega911/Ugcp8/>`_
 * `Sample with al-repeat <http://jsfiddle.net/lega911/MSMPX/>`_
+
+.. raw:: html
+   :file: discus.html

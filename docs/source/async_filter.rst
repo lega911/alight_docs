@@ -52,3 +52,6 @@ Examples
 
 * `Example trottle <http://jsfiddle.net/lega911/fkresedc/>`_
 * `Example with loading from server <http://plnkr.co/edit/1pdQniodIjtmSuiZHDWo?p=preview>`_
+
+.. raw:: html
+   :file: discus.html

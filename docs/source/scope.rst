@@ -144,3 +144,6 @@ Set the value of the variable
     scope.$setValue('var', 1);
     scope.$setValue('path.var', 2);
     scope.$setValue('path[key]', 3);
+
+.. raw:: html
+   :file: discus.html

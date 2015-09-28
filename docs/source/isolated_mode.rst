@@ -7,3 +7,6 @@ It's useful feature, when your webapp will be used on alien page. It lets use di
 
 * `Example 1 <http://plnkr.co/edit/1ys9rn?p=preview>`_
 * `Example 2 <http://plnkr.co/edit/JZhQAE?p=preview>`_
+
+.. raw:: html
+   :file: discus.html

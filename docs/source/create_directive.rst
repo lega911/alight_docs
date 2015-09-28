@@ -65,3 +65,6 @@ Attributes of directive:
     };
 
 If a directive returns the flag owner :code:`return { owner:true }`, then the process of binding will miss child DOM-elements, it is necessary for the directives which are themselves controlled subsidiary of DOM, such as al-repeat, al-controller, al-include, al-stop, etc.
+
+.. raw:: html
+   :file: discus.html

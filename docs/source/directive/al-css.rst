@@ -16,3 +16,6 @@ Overview
 
 * `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
 * `animated sample <http://jsfiddle.net/lega911/wRL9k/>`_
+
+.. raw:: html
+   :file: ../discus.html

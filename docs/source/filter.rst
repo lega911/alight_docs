@@ -45,3 +45,6 @@ generator
     <div al-repeat="it in size | generator"></div>
 
 `Example <http://jsfiddle.net/lega911/v2uf2/>`_
+
+.. raw:: html
+   :file: discus.html

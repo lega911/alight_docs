@@ -11,3 +11,6 @@ Overview
     :caption: Example
 
     <img al-src="http://example.com/{{link}}" />
+
+.. raw:: html
+   :file: ../discus.html

@@ -79,3 +79,6 @@ Examples
 * `Sample with animation <http://jsfiddle.net/lega911/A5Vsk/>`_
 * `Comment binding <http://jsfiddle.net/lega911/mdt498e8/>`_
 * `Other examples <http://angularlight.org/doc/examples.html#search=al-repeat>`_
+
+.. raw:: html
+   :file: ../discus.html

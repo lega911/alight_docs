@@ -137,3 +137,6 @@ You can bind custom elements with **alight.bootstrap**
     });
 
 `Example on jsfiddle <http://jsfiddle.net/lega911/x04sxwme/>`_
+
+.. raw:: html
+   :file: discus.html

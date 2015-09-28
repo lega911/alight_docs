@@ -7,3 +7,6 @@ How can I take a scope?
 * `Take a scope by a name of controller <http://jsfiddle.net/lega911/D77gr/>`_
 * `A way to take Scope by element <http://jsfiddle.net/lega911/ks9na/>`_ - alight.getScopeByElement(element)
 * `A way to take Scope by element with a directive <http://jsfiddle.net/lega911/L6y9fy76/>`_
+
+.. raw:: html
+   :file: ../discus.html

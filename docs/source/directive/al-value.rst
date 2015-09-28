@@ -16,3 +16,6 @@ Examples
 --------
 
 `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
+
+.. raw:: html
+   :file: ../discus.html

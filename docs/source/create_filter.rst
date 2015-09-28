@@ -31,3 +31,6 @@ alight.getFilter(name, scope, param)
 ------------------------------------
 
 This function look for a necessary filter, you can change it, for example you can make own location for your filters.
+
+.. raw:: html
+   :file: discus.html

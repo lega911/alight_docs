@@ -11,3 +11,6 @@ Overview
    :caption: Examples
 
     <input type="checkbox" al-checked="model" />
+
+.. raw:: html
+   :file: ../discus.html

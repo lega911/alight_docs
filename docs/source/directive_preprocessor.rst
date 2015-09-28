@@ -27,3 +27,6 @@ Objects:
 
 * `Example on plunkr <http://plnkr.co/edit/XxDimA?p=preview>`_
 * Article [ru]: `«Ленивое» подключение директив и препроцессор <http://habrahabr.ru/post/212301/>`_
+
+.. raw:: html
+   :file: discus.html

@@ -22,3 +22,6 @@ Overview
         <span>{{title}}</span>
         <span al-stop>{{title}}</span>
     </div>
+
+.. raw:: html
+   :file: ../discus.html

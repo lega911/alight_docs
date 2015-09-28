@@ -62,3 +62,6 @@ Bind-once
 * `bo-switch <directive/bo-switch.html>`_
 * `bo-switchDefault <directive/bo-switch.html>`_
 * `bo-switchWhen <directive/bo-switch.html>`_
+
+.. raw:: html
+   :file: discus.html

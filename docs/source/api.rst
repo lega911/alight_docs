@@ -58,3 +58,6 @@ Execute the function on next tick
 alight.getController(name, scope)
 `````````````````````````````````
 Take a controller by name. A controller can be located in alight.controllers, in global scope
+
+.. raw:: html
+   :file: discus.html
