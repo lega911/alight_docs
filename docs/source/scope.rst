@@ -25,6 +25,8 @@ Set the tracking variable. Also you can track system events, it returns object w
 * **option.OneTime**
 * **option.onStop**
 
+*Optimization tip*: If *callback* returns '$scanNoChanges' then $scan will not run extra-loop (like readonly watch)
+
 
 Scope.$compile(expression, option)
 ``````````````````````````````````
