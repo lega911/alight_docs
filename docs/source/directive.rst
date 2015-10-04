@@ -50,7 +50,7 @@ Special directives
 * **al-show**, `sample with animation <http://plnkr.co/edit/84YElx?p=preview>`_
 * `al-src <directive/al-src.html>`_
 * `al-stop <directive/al-stop.html>`_, stops a bind process for the element and his children.
-* `al-text <http://jsfiddle.net/lega911/mvd5Lhem/>`_
+* al-text, `example <http://jsfiddle.net/lega911/mvd5Lhem/>`_
 
 Bind-once
 ---------

@@ -10,18 +10,16 @@ Overview
 .. code-block:: html
     :caption: Syntax
 
-    <ul>
-        <li al-repeat="item in list"></li>
-        <li al-repeat="item in list | filter"></li>
-        <li al-repeat="item in list | filter | filter"></li>
-        <li al-repeat="item in list | filter track by $index"></li>
-        <li al-repeat="item in list track by $id(item)"></li>
-        <li al-repeat="item in list track by item.id"></li>
-        <li al-repeat="item in list track by $index"></li>
-        <li al-repeat="item in list" al-controller="Controller"></li>
-        <li al-repeat="item in list | filter store to filteredList"></li>
-        <li al-repeat="item in list | filter track by $index store to filteredList"></li>
-    </ul>
+    <li al-repeat="item in list"></li>
+    <li al-repeat="item in list | filter"></li>
+    <li al-repeat="item in list | filter | filter"></li>
+    <li al-repeat="item in list | filter track by $index"></li>
+    <li al-repeat="item in list track by $id(item)"></li>
+    <li al-repeat="item in list track by item.id"></li>
+    <li al-repeat="item in list track by $index"></li>
+    <li al-repeat="item in list" al-controller="Controller"></li>
+    <li al-repeat="item in list | filter store to filteredList"></li>
+    <li al-repeat="item in list | filter track by $index store to filteredList"></li>
 
 .. code-block:: html
     :caption: Bind to comment
@@ -33,6 +31,14 @@ Overview
       {{item.name}}<br/>
       <!-- /directive: al-repeat -->
     </div>
+
+.. code-block:: html
+    :caption: Iteration over an object
+
+    <div al-repeat="(key,value) in user">
+    <div al-repeat="(key,value) in user orderBy:key,reverse">
+    <div al-repeat="(key,value) in user | some_filter orderBy:'key',reverse">
+    <div al-repeat="(key,value) in user | some_filter orderBy:'key',reverse store to filteredList">
 
 Description of attributes
 -------------------------
@@ -78,6 +84,7 @@ Examples
 * `Sample with "store to variable" <http://jsfiddle.net/lega911/FVDJj/>`_
 * `Sample with animation <http://jsfiddle.net/lega911/A5Vsk/>`_
 * `Comment binding <http://jsfiddle.net/lega911/mdt498e8/>`_
+* `Iteration over an object <http://jsfiddle.net/lega911/nnk02xpy/>`_
 * `Other examples <http://angularlight.org/doc/examples.html#search=al-repeat>`_
 
 .. raw:: html
