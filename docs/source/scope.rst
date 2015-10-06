@@ -13,7 +13,7 @@ Set the tracking variable. Also you can track system events, it returns object w
 * **"$any"** - Track a modifying any object
 * **"$finishScan"** - a callback is executed as soon as $scan finish work
 * **"$finishBinding"** - the callback is called when a binding process finishes, `sample <http://jsfiddle.net/lega911/4H86x/>`_
-* **"finishScanOnce"**
+* **"$finishScanOnce"**
 
 **Option:**
 
@@ -90,7 +90,7 @@ Method is depricated (since v0.9)
 
 Scope.$new(isolate)
 ```````````````````
-Create a child Scope, if isolate = true, then child scope will not be inherited from parent scope.
+Create a child Scope, if isolate == true, then child scope will not be inherited from parent scope, if isolate == 'root' then it will be separate root scope.
 
 Scope.$destroy()
 ````````````````

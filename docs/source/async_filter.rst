@@ -43,7 +43,7 @@ Input arguments
         }
     }
 
-* watchMode, you can set 'deep', if you need deep-watching on the input
+* watchMode, you can set 'simple'/'array'/'deep', if you need to change a watch mode for the input
 * onChange - it's executed on every change of input
 * onStop - it's executed when a watch object was removed
 

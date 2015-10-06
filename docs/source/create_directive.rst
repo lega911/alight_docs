@@ -42,7 +42,7 @@ Attributes of directive:
 * **priority** - you can set priority for a directive
 * **template** - custom template
 * **templateUrl** - link to template
-* **scope** (true/'isolate') - to make a child scope
+* **scope** (true/'isolate'/'root') - to make a child scope, an isolated scope (with no inheritance), a separate root scope
 * **restrict** = 'A', can be 'AEM', 'A' matches attribute name, 'E' matches element name, 'M' matches class name
 * **init** - the method is called when the directive is made, before template, scope
 * **link** - the method is called after template, scope
