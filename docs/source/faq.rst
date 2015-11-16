@@ -27,8 +27,9 @@ FAQ
 * Where is "$odd, $even, $first, $last, $rest" for al-repeat?
     You can append any attributes, `example hot to append $odd $even <http://jsfiddle.net/lega911/zR3as/>`_
 * How to sort an array?
-    `Simple way <http://jsfiddle.net/lega911/81dqhL70/>`_
-    `With filter <http://jsfiddle.net/lega911/yud5yfcf/>`_
+    `Manual sort <http://jsfiddle.net/lega911/81dqhL70/>`_
+    `Filter orderBy <http://jsfiddle.net/lega911/q7jq1rwv/>`_
+    `Sort props of an object <http://jsfiddle.net/lega911/nnk02xpy/>`_
     `Call a method <http://jsfiddle.net/lega911/msaLght8/>`_
 * Where is al-select directive?
     `Here <http://angularlight.org/doc/examples.html#search=select>`_ a few examples with select control.
