@@ -12,29 +12,28 @@ An example of directive **al-text**, the directive is called when the binding pr
 .. code-block:: javascript
    :caption: Example of directive al-text
 
-    alight.directives.al.text = function(element, name, scope, env) {
-        // a function to set a text to the DOM-element
-        var setter = function(text) {
-            $(element).text(value)
-        }
-
+    alight.directives.al.text = function(scope, cd, element, name, env) {
         // Track to the variable
-        scope.$watch(name, setter, {
-            init: true  // Run the setter immediately
+        cd.watch(name, function(text) {
+            // set a text to the DOM-element
+            $(element).text(value)
         });
     };
 
 **Input arguments:**
 
+* **scope** - current Scope
+* **cd** - change detector
 * **element** - element of DOM
 * **name** - value of attribute
-* **scope** - current Scope
 * **env** - access to different options
 
 * env. **attrName** - name of attribute (directive)
 * env. **attributes** - list of attributes
 * env. **takeAttr(name, skip=true)** - take a value of the attribute, if skip=true then the attribute will skip a binding process, sample
-* env. **skippedAttr()** - list of not active attributes.
+* env. **skippedAttr()** - list of not active attributes
+* env. **stopBinding** = false - stop binding for child elements
+
 
 Attributes of directive:
 ------------------------
@@ -42,10 +41,12 @@ Attributes of directive:
 * **priority** - you can set priority for a directive
 * **template** - custom template
 * **templateUrl** - link to template
-* **scope** (true/'isolate'/'root') - to make a child scope, an isolated scope (with no inheritance), a separate root scope
+* **scope** (false/true) - if it is true, there will be a new, empty scope
+* **ChangeDetector** (false/true/'root') - create a new change detector
 * **restrict** = 'A', can be 'AEM', 'A' matches attribute name, 'E' matches element name, 'M' matches class name
-* **init** - the method is called when the directive is made, before template, scope
 * **link** - the method is called after template, scope
+* **init** - the method is called when the directive is made, before template, scope. You usually need **link** instead of it.
+* **stopBinding** (true) - stop binding for child elements
 * *anyAttr* - you can make a custom attribute, look. directive preprocessor
 
 .. code-block:: javascript
@@ -54,17 +55,12 @@ Attributes of directive:
     alight.directives.al.stop = {
         priority: -10,
         template: '<b></b>',
-        scope: true,
-        init: function(element, name, scope, env) {
-            return {
-                owner: true
-            };
-        },
-        link: function(element, name, scope, env) {
+        stopBinding: true,
+        link: function(scope, cd, element, name, env) {
         }
     };
 
-If a directive returns the flag owner :code:`return { owner:true }`, then the process of binding will miss child DOM-elements, it is necessary for the directives which are themselves controlled subsidiary of DOM, such as al-repeat, al-controller, al-include, al-stop, etc.
+If "stopBinding" is true, then the process of binding will skip child DOM-elements, it is necessary for the directives which are themselves controlled subsidiary of DOM, such as al-repeat, al-controller, al-include, al-stop, etc.
 
 .. raw:: html
    :file: discus.html

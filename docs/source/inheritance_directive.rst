@@ -15,9 +15,9 @@ Make a directive al-value with deferred updating of model:
 .. code-block:: javascript
    :caption: Inherit al-value
 
-    alight.directives.al.valueDelay = function() {
-        // create a parent directive
-        var dir = alight.directives.al.value.apply(null, arguments);
+    alight.directives.al.valueDelay = function(scope, cd, element, value, env) {
+        // create a source directive
+        var dir = alight.directives.al.value(scope, cd, element, value, env);
 
         // save the old method for update the model
         var oldUpdate = dir.updateModel;
@@ -39,6 +39,7 @@ Make a directive al-value with deferred updating of model:
 Examples of inheritance
 ----------------------
 
+Examples below for v0.10, but in v0.11 it works similar
 * al-value -> `al-value-delay <http://jsfiddle.net/lega911/u4WnM/>`_
 * al-show -> `al-show-slow <http://jsfiddle.net/lega911/3cGDc/>`_
 * al-repeat, `add "$even", "$odd" into the directive <http://jsfiddle.net/lega911/zR3as/>`_

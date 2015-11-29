@@ -1,7 +1,7 @@
 Base filters
 ============
 
-data
+date
 ----
 
 * To convert the date to string
@@ -85,6 +85,17 @@ throttle
     <p>{{link | throttle:300 | loadFromServer}}</p>
 
 `Example <http://jsfiddle.net/lega911/8fnh56op/>`_
+
+json
+----
+
+* display data in json style
+
+.. code-block:: html
+    :caption: example
+
+    {{data.value | json}}
+    {{this | json}}
 
 .. raw:: html
    :file: discus.html

@@ -22,8 +22,8 @@ If you can't use tags ``{{ }}``, you can change this to ``{# #}``, ``{< >}``, ``
 
 .. code-block:: javascript
 
-    alight.utilits.pars_start_tag = '{#';
-    alight.utilits.pars_finish_tag = '#}';
+    alight.utils.pars_start_tag = '{#';
+    alight.utils.pars_finish_tag = '#}';
 
 For complex text bindings you can use `text directives <text_directive.html>`_
 

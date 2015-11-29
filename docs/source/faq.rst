@@ -7,8 +7,6 @@ FAQ
    faq/take_a_scope
 
 * `How to call Alert from al-click <http://jsfiddle.net/lega911/Lv0g4anm/>`_
-* `How to simplify $parent.$parent.$parent... <http://jsfiddle.net/lega911/85axyo00/>`_
-* `An one scope for a few applications <http://jsfiddle.net/lega911/93Ahp/>`_
 * Where can I take a debug version
     `Here <https://github.com/lega911/alight>`_ you can get release and debug of any version, also you can use bower: :code:`bower install alight`
 * Where is $http service
@@ -18,21 +16,19 @@ FAQ
     Only changed elements.
 * I need Angular Light runs my function when a bindings process will finish.
     You can observe it :code:`scope.$scan("$finishBinding", callback)`
-* Is it possible to pass jquery $element to function from al-click? Something like al-click="someFunc($this)"
-    No, but you can extend the directive, or make a thin directive for this, `example <http://jsfiddle.net/lega911/2n1q7yt0/>`_
+* Is it possible to pass jquery $element to function from al-click?
+    You can use $event that contains element, al-click="someFunc($event)"
 * How can I use al-repeat not as attribute, but as a comment?
     al-repeat supports comment binding, `example <http://jsfiddle.net/lega911/mdt498e8/>`_
 * Why al-show with an empty array doesn't hide my element: :code:`al-show="model.array"`?
     Because there is javascript and !!model.array always give you true, you can use :code:`al-show="model.array.length"`
 * Where is "$odd, $even, $first, $last, $rest" for al-repeat?
-    You can append any attributes, `example hot to append $odd $even <http://jsfiddle.net/lega911/zR3as/>`_
+    You can append any attributes, `example how to append $odd $even <http://jsfiddle.net/lega911/zR3as/>`_
 * How to sort an array?
     `Manual sort <http://jsfiddle.net/lega911/81dqhL70/>`_
     `Filter orderBy <http://jsfiddle.net/lega911/q7jq1rwv/>`_
     `Sort props of an object <http://jsfiddle.net/lega911/nnk02xpy/>`_
     `Call a method <http://jsfiddle.net/lega911/msaLght8/>`_
-* Where is al-select directive?
-    `Here <http://angularlight.org/doc/examples.html#search=select>`_ a few examples with select control.
 * Can I rename directives?
     Yes, :code:`alight.directives.al.myKeypress = alight.directives.al.keypress`
 * How to call my function when Scope.$scan finish digets process?

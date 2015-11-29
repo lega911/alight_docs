@@ -27,6 +27,7 @@ Contents:
    namespace.rst
    binding_to_dom.rst
    directive_preprocessor.rst
+   migration_to11.rst
    faq.rst
 
 `Examples <http://angularlight.org/doc/examples.html>`_
