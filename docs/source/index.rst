@@ -12,7 +12,8 @@ Contents:
    :maxdepth: 1
 
    api.rst
-   scope.rst
+   bootstrap.rst
+   change_detector.rst
    create_directive.rst
    inheritance_directive.rst
    directive.rst

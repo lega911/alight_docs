@@ -11,37 +11,33 @@ Turn on a logging debug information
 * alight.debug.watch - logging function $watch
 * alight.debug.watchText - logging function $watchText
 
-alight.autostart = false
-````````````````````````
-Don't call alight.bootstrap on start
-
-alight.bootstrap(element)
+alight.bootstrap(option)
 `````````````````````````
-Manual start applications, element - DOM element or array of elements. If element is undefined then Angular Light will start all al-app on the document. If alight.autostart = true, the method will be called after the DOM is ready
+It lets you a few ways to bind DOM, `read more <./bootstrap.html>`_
 
-alight.applyBindings(scope, element, config)
+alight.bind(ChangeDetector, element, option)
 ````````````````````````````````````````````
-Bind the scope to the DOM element
+Bind a change detector to the DOM element, alias **alight.applyBindings**
 
-* scope - Scope object
+* ChangeDetector - an instance of ChangeDetector
 * element - DOM element
 * config.skip_top = false - Skip binding the top DOM element
 * config.skip_attr = ['al-repeat', 'al-app'] - Skip attributes for a binding, for the top element
 
 .. code-block:: javascript
 
-    var scope = alight.Scope();
+    var cd = alight.ChangeDetector();
     var element = document.body;
-    alight.applyBindings(scope, element);
+    alight.bind(cd, element);
 
 
-alight.Scope()
+alight.ChangeDetector([scope])
 ``````````````
-Create a (root) Scope
+Create a new change detector, `read more <./change_detector.html>`_
 
-alight.controllers
+alight.ctrl
 ``````````````````
-Dictionary of controllers
+Dictionary of controllers, alias for **alight.directives.ctrl**
 
 alight.filters
 ``````````````
@@ -49,15 +45,19 @@ Dictionary of filters
 
 alight.directives
 `````````````````
-Dictionary of directives
+Dictionary of directives, short alias **alight.d**
+
+alight.text
+```````````
+Collection of text directives
+
+alight.hook
+```````````
+Different hooks
 
 alight.nextTick(callback)
 `````````````````````````
 Execute the function on next tick
-
-alight.getController(name, scope)
-`````````````````````````````````
-Take a controller by name. A controller can be located in alight.controllers, in global scope
 
 .. raw:: html
    :file: discus.html

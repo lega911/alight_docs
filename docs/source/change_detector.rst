@@ -1,7 +1,8 @@
-Scope
------
+Change Detector
+---------------
+It lets you observe changes in your scope
 
-Scope.$watch(name, callback, option)
+ChangeDetector.watch(name, callback, option)
 ````````````````````````````````````
 Set the tracking variable. Also you can track system events, it returns object with method stop()
 
@@ -14,11 +15,11 @@ Set the tracking variable. Also you can track system events, it returns object w
 * **"$finishScan"** - a callback is executed as soon as $scan finish work
 * **"$finishBinding"** - the callback is called when a binding process finishes, `sample <http://jsfiddle.net/lega911/4H86x/>`_
 * **"$finishScanOnce"**
+* **"$onScanOnce"** - the callback is called in scan loop
 
 **Option:**
 
 * **option** = true or **option.isArray** = true - watch an array
-* **option.init** = true - Execute *callback*
 * **option.readOnly** = true - You can use it if the *callback* doesn't modify the scope. (an optimization option).
 * **option.deep** = true - a deep comparison for the object.
 * **option.isArray**
@@ -28,7 +29,7 @@ Set the tracking variable. Also you can track system events, it returns object w
 *Optimization tip*: If *callback* returns '$scanNoChanges' then $scan will not run extra-loop (like readonly watch)
 
 
-Scope.$compile(expression, option)
+ChangeDetector.compile(expression, option)
 ``````````````````````````````````
 Compile an expression
 
@@ -41,111 +42,94 @@ Compile an expression
 .. code-block:: javascript
    :caption: Example of $compile
 
-    var scope = alight.Scope()
-    var fn = scope.$compile('"hello " + title')
+    var scope = {};
+    var cd = alight.ChangeDetector(scope)
+    var fn = cd.compile('"hello " + title')
     scope.title = 'linux'
-    fn() // return "hello linux"
+    fn(scope) // return "hello linux"
     scope.title = 'macos'
-    fn() // return "hello macos"
+    fn(scope) // return "hello macos"
 
 .. code-block:: javascript
    :caption: Example with input
 
-    var fn = scope.$compile('title + v', { input:['v'] })
-    fn(' X') // return "macos X"
+    var fn = cd.compile('title + v', { input:['v'] })
+    fn(scope, ' X') // return "macos X"
 
 .. code-block:: javascript
     :caption: Example with no_return
 
-    var fn = scope.$compile('title = v', { input:['v'], no_return:true })
-    fn('linux') // scope.title = "linux"
+    var fn = cd.compile('title = v', { input:['v'], no_return:true })
+    fn(scope, 'linux') // scope.title = "linux"
 
 
-Scope.$eval(expression)
+ChangeDetector.eval(expression)
 ```````````````````````
 Execute an expression
 
-Scope.$watchText(tpl, callback)
+ChangeDetector.watchText(tpl, callback)
 ```````````````````````````````
 Track the template
 
-Scope.$compileText(tpl)
-```````````````````````
-Compile the template.
-Method is depricated (since v0.9)
-
-.. code-block:: javascript
-    :caption: Example with $complieText
-
-    var scope = alight.Scope()
-    var fn = scope.$compileText('Hello {{title}}!')
-    scope.title = 'linux'
-    fn() // return "Hello linux!"
-
-Scope.$evalText(tpl)
-````````````````````
-Evalute the template.
-Method is depricated (since v0.9)
-
-
-Scope.$new(isolate)
+ChangeDetector.new([scope])
 ```````````````````
-Create a child Scope, if isolate == true, then child scope will not be inherited from parent scope, if isolate == 'root' then it will be separate root scope.
+Create a child ChangeDetector, if scope is omitted, then it will used parent scope
 
-Scope.$destroy()
+ChangeDetector.destroy()
 ````````````````
 Destroy the Scope.
 
-Scope.$scan(callback or option)
+ChangeDetector.scan(callback or option)
 ````````````````````````````````
-Start the search for changes
+Starts the search for changes, returns a watch statistic
 
 * **callback** - Method will be called when $scan finishes a work, even if $scan has already started from other a place.
 
-* **option.callback** - see above.
-* **option.top** - Choose the root scope for current scanning (depricated).
+* **option.callback** - see above
+* **option.skipWatch** - skip specific watch
 * **option.late** = *(true/false)* - If there is a few $scan commands, Angular Light will call only last one.
 
 .. code-block:: javascript
     :caption: Example with $scan
 
-    var scope = alight.Scope()
-    scope.$watch('title', function(value) {
+    var scope = {};
+    var cd = alight.ChangeDetector(scope);
+    cd.watch('title', function(value) {
         console.log('title =', value)
-    }) // make observing
+    }); // make observing
     scope.title = 'new'
-    scope.$scan()
+    cd.scan()
     // print title = new
     scope.title = 'linux'
-    scope.$scan()
+    cd.scan()
     // print title = linux
-    scope.$scan()
+    cd.scan()
     // do nothing
 
-Scope.$scanAsync(callback)
-``````````````````````````
-It the same as *Scope.$scan({late: true, callback: callback})*
 
-
-Scope.$getValue(name)
+ChangeDetector.getValue(name)
 `````````````````````
-Take the value of the variable, also you can use Scope.$eval
+Take the value of the variable, also you can use ChangeDetector.eval
 
-Scope.$setValue(name, value)
+ChangeDetector.setValue(name, value)
 ````````````````````````````
 Set the value of the variable
 
 .. code-block:: javascript
     :caption: Example with $setValue
 
+    var scope = {}
     scope.var = 1;
     scope.path.var = 2;
     scope.path[scope.key] = 3;
 
     // equal
-    scope.$setValue('var', 1);
-    scope.$setValue('path.var', 2);
-    scope.$setValue('path[key]', 3);
+    var scope = {}
+    var cd = alight.ChangeDetector(scope);
+
+    cd.setValue('var', 1);
+    cd.setValue('path.var', 2);
+    cd.setValue('path[key]', 3);
 
 .. raw:: html
    :file: discus.html
