@@ -35,6 +35,9 @@ FAQ
     You can pass your function as callback :code:`Scope.$scan(callback)`
 * How to redraw bind-once?
     `Example <http://jsfiddle.net/lega911/wRA7L/>`_
+* Where is DI?
+    Angular Light doesn't have it, but you can make it for yourself, `example <http://plnkr.co/edit/WzkM0WLSBRYDmLxVUpJ8?p=preview>`_
+
 
 .. raw:: html
    :file: discus.html

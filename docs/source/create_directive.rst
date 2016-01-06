@@ -33,6 +33,7 @@ An example of directive **al-text**, the directive is called when the binding pr
 * env. **takeAttr(name, skip=true)** - take a value of the attribute, if skip=true then the attribute will skip a binding process, sample
 * env. **skippedAttr()** - list of not active attributes
 * env. **stopBinding** = false - stop binding for child elements
+* env. **parentChangeDetector** - access to parent ChangeDetector in 'root' mode
 
 
 Attributes of directive:
