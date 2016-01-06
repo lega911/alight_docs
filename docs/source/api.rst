@@ -15,21 +15,26 @@ alight.bootstrap(option)
 `````````````````````````
 It lets you a few ways to bind DOM, `read more <./bootstrap.html>`_
 
-alight.bind(ChangeDetector, element, option)
+alight.bind(scope, element, option)
 ````````````````````````````````````````````
 Bind a change detector to the DOM element, alias **alight.applyBindings**
 
-* ChangeDetector - an instance of ChangeDetector
+* scope - an instance of Scope (or ChangeDetector)
 * element - DOM element
-* config.skip_top = false - Skip binding the top DOM element
-* config.skip_attr = ['al-repeat', 'al-app'] - Skip attributes for a binding, for the top element
+* option.skip_top = false - Skip binding the top DOM element
+* option.skip_attr = ['al-repeat', 'al-app'] - Skip attributes for a binding, for the top element
+* option.attachDirective = {} - Attach a custom directive
 
 .. code-block:: javascript
 
-    var cd = alight.ChangeDetector();
+    var scope = alight.Scope();
     var element = document.body;
-    alight.bind(cd, element);
+    alight.bind(scope, element);
 
+
+alight.Scope()
+``````````````
+Create a new scope
 
 alight.ChangeDetector([scope])
 ``````````````
@@ -37,7 +42,7 @@ Create a new change detector, `read more <./change_detector.html>`_
 
 alight.ctrl
 ``````````````````
-Dictionary of controllers, alias for **alight.directives.ctrl**
+Dictionary of controllers, alias for **alight.controllers**
 
 alight.filters
 ``````````````

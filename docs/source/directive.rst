@@ -57,7 +57,6 @@ Bind-once
 
 * bo-if
 * bo-ifnot
-* bo-repeat
 * bo-src
 * `bo-switch <directive/bo-switch.html>`_
 * `bo-switchDefault <directive/bo-switch.html>`_

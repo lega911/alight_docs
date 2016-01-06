@@ -9,38 +9,36 @@ Async filters let you transform data in async mode, a filter should be placed in
 .. code-block:: javascript
     :caption: Example of async filter
 
-    alight.filters.trottle = function(delay, cd, env) {
+    alight.filters.trottle = function(delay, scope, env) {
         delay = Number(delay);
         var to;
-        return {
-            onChange: function(value) {
-                if(to) clearTimeout(to);
-                to = setTimeout(function() {
-                    to = null;
-                    env.setValue(value);
-                    cd.scan();
-                }, delay);
-            }
+        this.onChange = function(value) {
+            if(to) clearTimeout(to);
+            to = setTimeout(function() {
+                to = null;
+                env.setValue(value);
+                scope.scan();
+            }, delay);
         }
     }
+    alight.filters.trottle.prototype.ext = true;  // extra filter
 
 Input arguments
 ---------------
 
 * expression - an input expression
-* cd - change detector
+* scope - scope
 * env - extra functional
 * env.setValue(value) - set value of filter
 
 .. code-block:: javascript
     :caption: Example of async filter
 
-    alight.filters.asyncFilter = function(expression, cd, env) {
-        return {
-            watchMode: 'deep',
-            onChange: function(value) {},
-            onStop: function() {}
-        }
+    alight.filters.asyncFilter = function(expression, scope, env) {};
+    alight.filters.asyncFilter.prototype = {
+        watchMode: 'deep',
+        onChange: function(value) {},
+        onStop: function() {}
     }
 
 * watchMode, you can set 'simple'/'array'/'deep', if you need to change a watch mode for the input

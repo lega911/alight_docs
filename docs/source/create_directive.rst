@@ -12,9 +12,9 @@ An example of directive **al-text**, the directive is called when the binding pr
 .. code-block:: javascript
    :caption: Example of directive al-text
 
-    alight.directives.al.text = function(scope, cd, element, name, env) {
+    alight.directives.al.text = function(scope, element, name, env) {
         // Track to the variable
-        cd.watch(name, function(text) {
+        scope.$watch(name, function(text) {
             // set a text to the DOM-element
             $(element).text(value)
         });
@@ -33,7 +33,8 @@ An example of directive **al-text**, the directive is called when the binding pr
 * env. **takeAttr(name, skip=true)** - take a value of the attribute, if skip=true then the attribute will skip a binding process, sample
 * env. **skippedAttr()** - list of not active attributes
 * env. **stopBinding** = false - stop binding for child elements
-* env. **parentChangeDetector** - access to parent ChangeDetector in 'root' mode
+* env. **changeDetector** - access to ChangeDetector
+* env. **parentChangeDetector** - access to parent ChangeDetector (if scope was changed)
 
 
 Attributes of directive:
@@ -47,7 +48,7 @@ Attributes of directive:
 * **restrict** = 'A', can be 'AEM', 'A' matches attribute name, 'E' matches element name, 'M' matches class name
 * **link** - the method is called after template, scope
 * **init** - the method is called when the directive is made, before template, scope. You usually need **link** instead of it.
-* **stopBinding** (true) - stop binding for child elements
+* **stopBinding** (false/true) - stop binding for child elements
 * *anyAttr* - you can make a custom attribute, look. directive preprocessor
 
 .. code-block:: javascript
@@ -57,7 +58,7 @@ Attributes of directive:
         priority: -10,
         template: '<b></b>',
         stopBinding: true,
-        link: function(scope, cd, element, name, env) {
+        link: function(scope, element, name, env) {
         }
     };
 

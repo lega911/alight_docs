@@ -1,5 +1,5 @@
 Inheritance of directives
-======================
+=========================
 
 If you want make inheritance of a directive, you need call a parent directive after that you can replace methods of the directive. For example, **al-value** has a few methods:
 
@@ -22,7 +22,7 @@ Make a directive al-value with deferred updating of model:
         // save the old method for update the model
         var oldUpdate = dir.updateModel;
         var timer = null;
-        
+
         // change the method
         dir.updateModel = function() {
             if(timer) clearTimeout(timer);

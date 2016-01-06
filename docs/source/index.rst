@@ -13,6 +13,7 @@ Contents:
 
    api.rst
    bootstrap.rst
+   scope.rst
    change_detector.rst
    create_directive.rst
    inheritance_directive.rst
@@ -27,7 +28,7 @@ Contents:
    namespace.rst
    binding_to_dom.rst
    directive_preprocessor.rst
-   migration_to11.rst
+   migration_to12.rst
    faq.rst
 
 `Examples <http://angularlight.org/doc/examples.html>`_

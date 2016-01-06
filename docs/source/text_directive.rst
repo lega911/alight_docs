@@ -16,12 +16,12 @@ An able to control a declarative data binding in the HTML
 .. code-block:: javascript
    :caption: text directive counter
 
-    alight.text.counter = function(callback, expression, cd) {
+    alight.text.counter = function(callback, expression, scope) {
         var n = 0;
         setInterval(function(){
             n++;
             callback(n)     // set result
-            cd.scan()       // $digest
+            scope.$scan()       // $digest
         }, 1000);
     }
 
@@ -30,7 +30,7 @@ Input arguments
 
 * **callback**   - a function to set a value
 * **expression** - expression of directive
-* **cd**         - change detector
+* **scope**      - scope
 * env. **finally** - a function to set the final value, after that $watch will be removed.
 * env.**setter** = callback
 

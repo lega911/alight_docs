@@ -6,12 +6,12 @@ Directive preprocessor lets you control process of creating directives. You can 
 Objects:
 
 * **alight.directivePreprocessor** - a default preprocessor, you can change it
-* **alight.directivePreprocessor.ext** - a  list of handlers, you can append/remove them
+* **alight.hooks.directive** - a  list of handlers, you can append/remove them
 
 .. code-block:: javascript
     :caption: Example how to create attribute 'bold'
 
-    alight.directivePreprocessor.ext.splice(1, 0, {
+    alight.hooks.directive.ext.splice(1, 0, {
         code: 'bold',  // not necessary
         fn: function() {
             if(this.directive.bold) this.element.innerHTML = '<b>' + this.element.innerHTML + '</b>'
@@ -19,7 +19,7 @@ Objects:
     })
 
 .. code-block:: javascript
-    :caption: How ot use it
+    :caption: How to use it
 
     alight.directives.al.example = {
         bold: true

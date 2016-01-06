@@ -32,19 +32,6 @@ slice
     <div al-repeat="it in list | slice:a"></div>
     <div al-repeat="it in list | slice:a,b"></div>
 
-generator
----------
-
-* The filter makes an array (for al-repeat)
-* input arguments: numbers
-
-.. code-block:: html
-    :caption: example
-
-    <div al-repeat="it in 10 | generator"></div>
-    <div al-repeat="it in size | generator"></div>
-
-`Example <http://jsfiddle.net/lega911/v2uf2/>`_
 
 toArray
 ---------

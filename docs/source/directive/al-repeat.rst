@@ -10,6 +10,7 @@ Overview
 .. code-block:: html
     :caption: Syntax
 
+    <li al-repeat="i in 10"></li>
     <li al-repeat="item in list"></li>
     <li al-repeat="item in list | filter"></li>
     <li al-repeat="item in list | filter | filter"></li>

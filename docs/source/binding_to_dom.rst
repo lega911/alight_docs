@@ -12,19 +12,16 @@ A few ways to bind a model to the DOM
         <p>{{title}}</p>
     </div>
 
-Make ChangeDetector, then to bind it to the DOM with **alight.applyBindings**
+Make Scope, then bind it to the DOM with **alight.bind**
 
 .. code-block:: javascript
     :caption: code
 
     var tag = document.querySelector('#app');  // take the tag
 
-    var scope = {
-        title: 'Hello!'
-    };
-    var cd = alight.ChangeDetector(scope);
-
-    alight.bind(cd, tag);  // apply bindings
+    var scope = alight.Scope();
+    scope.title = 'Hello!'
+    alight.bind(scope, tag);  // apply bindings
 
 `Example on jsfiddle <http://jsfiddle.net/lega911/D9t5F/>`_
 
