@@ -4,16 +4,16 @@ Create filters
 Overview
 --------
 
-A filter should be placed in **alight.filters** (you can change path with *alight.getFilter*), or in scope.$ns for private filters.
+A filter should be placed in **alight.filters**, or in scope.$ns for private filters.
 
 .. code-block:: javascript
     :caption: Example filter
 
-    alight.filters.mylimit = function(value, name, scope) {
-        return value.slice(0, scope.$getValue(name));
+    alight.filters.double = function(value, expression, scope) {
+    	return value + expression + value
     }
 
-`Example on jsfiddle <http://jsfiddle.net/lega911/pTT5x/>`_
+`Example on jsfiddle <http://jsfiddle.net/lega911/chbysp0a/>`_
 
 Input arguments
 ---------------
