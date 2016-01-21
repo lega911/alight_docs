@@ -5,8 +5,9 @@ Overview
 --------
 
 * You can invoke a controller using directive al-ctrl="controllerName", also you can declare a top controller in directive al-app="controllerName".
-* Your controller can be a simple function or a class.
 * Your controller should be placed in alight.ctrl.controllerName or in scope.$ns.ctrl for a private controller or in global window.
+* Your controller can be a simple function or a class.
+* If your controller is a class (has a prototype), then Scope's methods ($scope, $watch, $getValue etc) are available in "this".
 
 Controller as a function
 ------------------------

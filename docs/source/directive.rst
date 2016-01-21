@@ -36,7 +36,7 @@ Special directives
 ------------------
 
 * `al-app <directive/al-app.html>`_, init application with current element, `examples </doc/examples.html#search=al-app>`_
-* `al-ctrl </controller.html>`_
+* `al-ctrl <controller.html>`_
 * al-cloak, hide current element until activate the application, `examples </doc/examples.html#search=al-cloak>`_
 * `al-class/al-css <directive/al-css.html>`_, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_, `animated sample <http://jsfiddle.net/lega911/wRL9k/>`_
 * **al-style** `examples </doc/examples.html#search=al-style>`_
