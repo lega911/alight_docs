@@ -12,9 +12,9 @@ An example of directive **al-text**, the directive is called when the binding pr
 .. code-block:: javascript
    :caption: Example of directive al-text
 
-    alight.directives.al.text = function(scope, element, name, env) {
-        // Track to the variable
-        scope.$watch(name, function(text) {
+    alight.directives.al.text = function(scope, element, expression, env) {
+        // Track the given expression
+        scope.$watch(expression, function(value) {
             // set a text to the DOM-element
             $(element).text(value)
         });
