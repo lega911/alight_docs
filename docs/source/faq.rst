@@ -37,6 +37,19 @@ FAQ
     `Example <http://jsfiddle.net/lega911/wRA7L/>`_
 * Where is DI?
     Angular Light doesn't have it, but you can make it for yourself, `example <http://plnkr.co/edit/WzkM0WLSBRYDmLxVUpJ8?p=preview>`_
+* Why al-repeat displays not all items?
+    Probably a input list contains doubles, in this case you should declare ID - using **track by**
+
+    .. code-block:: html
+
+        <div al-repeat="item in list track by $index">
+
+    .. code-block:: html
+
+        <div al-repeat="item in list track by items.id">
+
+    Look at `al-repeat <directive/al-repeat.html>`_
+
 
 
 .. raw:: html

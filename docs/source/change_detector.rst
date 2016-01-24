@@ -131,5 +131,22 @@ Set the value of the variable
     cd.setValue('path.var', 2);
     cd.setValue('path[key]', 3);
 
+
+How does it work?
+-----------------
+
+* Scope is a object with user's data which can have a lot of information, it doesn't have own functional, $scope.$watch is a just a link to activeChangeDetector.watch
+* ChangeDetector - is a dirty-checking tool which implement "watch", "scan" etc.
+* one ChangeDetector instance observes only one object (e.g. scope)
+* Different directives makes own ChangeDetectors and observe your data (your scope), so a few (10, 20) change detectors can observe the same scope. e.g. al-repeat observes every item of array, al-if and al-include make own CD for child template with the same scope.
+
+You can't call $watch anytime. When you call scope.$parent.$watch, your parent can have a few CD, and your parent doesn't know which CD should serves your watch-expression. It's why you should take needed CD and call CD.watch
+
+On the other side you can call scope.$watch (inside link function) because in this moment one of the CD is active, so scope.$watch calls activeCD.watch
+
+.. image:: images/scopes.png
+
+
+
 .. raw:: html
    :file: discus.html

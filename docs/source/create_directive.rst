@@ -64,5 +64,20 @@ Attributes of directive:
 
 If "stopBinding" is true, then the process of binding will skip child DOM-elements, it is necessary for the directives which are themselves controlled subsidiary of DOM, such as al-repeat, al-controller, al-include, al-stop, etc.
 
+When you try to bind the same element, you have to skip used directives,
+otherwise you will have a recursion problem. You can use option **skip_attr: env.skippedAttr()** for this,
+**env.skippedAttr()** gives you a list of used directives.
+
+.. code-block:: javascript
+
+    alight.directives.al.stop = {
+        stopBinding: true,
+        link: function(scope, element, name, env) {
+            alight.bind(scope, element, {
+                skip_attr: env.skippedAttr()
+            })
+        }
+    };
+
 .. raw:: html
    :file: discus.html
