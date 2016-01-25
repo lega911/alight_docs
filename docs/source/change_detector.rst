@@ -140,9 +140,12 @@ How does it work?
 * one ChangeDetector instance observes only one object (e.g. scope)
 * Different directives makes own ChangeDetectors and observe your data (your scope), so a few (10, 20) change detectors can observe the same scope. e.g. al-repeat observes every item of array, al-if and al-include make own CD for child template with the same scope.
 
-You can't call $watch anytime. When you call scope.$parent.$watch, your parent can have a few CD, and your parent doesn't know which CD should serves your watch-expression. It's why you should take needed CD and call CD.watch
+You can't call $watch or $new anytime. When you call scope.$parent.$watch, your parent can have a few CD, and your parent doesn't know which CD should serves your watch-expression. It's why you should take needed CD and call CD.watch.
 
 On the other side you can call scope.$watch (inside link function) because in this moment one of the CD is active, so scope.$watch calls activeCD.watch
+
+Any other scope's methods doesn't have this problem and they can be called any time, ($eval, $getValue, $setValue etc)
+
 
 .. image:: images/scopes.png
 

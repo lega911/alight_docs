@@ -193,3 +193,6 @@ pseudoxml:
 
 serve:
 	cd ./build/html; python3 -m http.server
+
+remote_build:
+	curl 'https://readthedocs.org/build/35950' -H 'Pragma: no-cache' -H 'Origin: https://readthedocs.org' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: ru,en-US;q=0.8,en;q=0.6' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Cache-Control: no-cache' -H 'Referer: https://readthedocs.org/projects/angular-light/builds/' -H 'Cookie: __utmt=1; csrftoken=QOoafYaTM240yDTPgSJeUAiDUMbcZEs4; sessionid=g2mxic46pznasei67hbx23hf6bp20gv7; __utma=263995919.786002196.1440605796.1453490895.1453647044.27; __utmb=263995919.5.10.1453647044; __utmc=263995919; __utmz=263995919.1442082548.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)' -H 'Connection: keep-alive' --data 'version_slug=latest' --compressed
