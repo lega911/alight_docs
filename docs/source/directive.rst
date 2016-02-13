@@ -42,7 +42,7 @@ Special directives
 * **al-style** `examples </doc/examples.html#search=al-style>`_
 * **al-show**, `sample with animation <http://plnkr.co/edit/84YElx?p=preview>`_
 * al-hide, `sample with animation <http://plnkr.co/edit/84YElx?p=preview>`_
-* al-html
+* `al-html <directive/html.html>`_
 * **al-if**, `sample with animation <http://jsfiddle.net/lega911/9v2DY/>`_
 * al-ifnot, `sample with animation <http://jsfiddle.net/lega911/9v2DY/>`_
 * **al-include**, loads a html block from the server, `sample with animation <http://plnkr.co/edit/9Pbg5e?p=preview>`_
