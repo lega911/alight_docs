@@ -10,9 +10,9 @@ Overview
    :caption: examples
 
     <div al-html="model"></div>
-    <div al-html:id="templateId"></div>
-    <div al-html:url="link"></div>
-    <div al-html:url.tpl="/tpls/{{link}}.html"></div>
+    <div al-html.id="templateId"></div>
+    <div al-html.url="link"></div>
+    <div al-html.url.tpl="/tpls/{{link}}.html"></div>
 
     <!-- alias -->
     <div :html="model"></div>
@@ -36,13 +36,13 @@ Examples
 --------
 
  * al-html="model" - takes html from a value of the model
- * al-html:id="template" - takes html from element by id, id is taken from variable template
- * al-html:id.literal="templateId" - takes html from element where id = "templateId"
- * al-html:url="link" - loads html from a server, the url of templates is taken from variable "link"
- * al-html:url.literal="/tpls/file.html" - loads html from a server, url = "/tpls/file.html"
- * al-html:url.tpl="/tpls/{{name}}.html" - loads html from a server, url depends on variable "name"
- * al-html:inline="model" - takes html from current element and saves it to variable "model"
- * al-html:id.scope="templateId:inputVariable" - takes html element by id, makes a local variable "outer" for the template, and binds inputVariable: childScope.outer=scope.inputVariable
+ * al-html.id="template" - takes html from element by id, id is taken from variable template
+ * al-html.id.literal="templateId" - takes html from element where id = "templateId"
+ * al-html.url="link" - loads html from a server, the url of templates is taken from variable "link"
+ * al-html.url.literal="/tpls/file.html" - loads html from a server, url = "/tpls/file.html"
+ * al-html.url.tpl="/tpls/{{name}}.html" - loads html from a server, url depends on variable "name"
+ * al-html.inline="model" - takes html from current element and saves it to variable "model"
+ * al-html.id.scope="templateId:inputVariable" - takes html element by id, makes a local variable "outer" for the template, and binds inputVariable: childScope.outer=scope.inputVariable
 
 Examples
 --------
