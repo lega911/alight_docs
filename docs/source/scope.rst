@@ -21,7 +21,7 @@ Set the tracking variable. Also you can track system events, it returns object w
 
 * **option** = true or **option.isArray** = true - watch an array
 * **option.readOnly** = true - You can use it if the *callback* doesn't modify the scope. (an optimization option).
-* **option.deep** = true - a deep comparison for the object.
+* **option.deep** = true | integer - a deep comparison for the object, watches 10 hierarchy depth levels by default, as alternative an integer which contains the depth of levels to watch.
 * **option.isArray**
 * **option.OneTime**
 * **option.onStop**
