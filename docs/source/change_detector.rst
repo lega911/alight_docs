@@ -17,6 +17,10 @@ Set the tracking variable. Also you can track system events, it returns object w
 * **"$finishScanOnce"**
 * **"$onScanOnce"** - the callback is called in scan loop
 
+**Callback:**
+
+The callback is called with two parameters. The first parameter contains the object after it has been changed, the second parameter contains the object before it has been changed. If the watched variable is not initialized, the second parameter is undefined.
+
 **Option:**
 
 * **option** = true or **option.isArray** = true - watch an array
