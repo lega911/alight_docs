@@ -29,6 +29,24 @@ Set the tracking variable. Also you can track system events, it returns object w
 *Optimization tip*: If *callback* returns '$scanNoChanges' then $scan will not run extra-loop (like readonly watch)
 
 
+ChangeDetector.watchGroup(expression, callback)
+``````````````````````````````````
+
+Watches a group of expressions.
+There are two approaches which can be used:
+
+1. It returns a group object. You need to manually add more watcher objects to the group (`Example <https://jsfiddle.net/lega911/8om4ur4f/>`_).
+2. Use an array as expression and watch it's items (`Example <https://jsfiddle.net/lega911/8nvb24uy/>`_).
+
+**expression**:
+
+* array of <expressions> - items which will be watched
+
+**callback**
+
+* will be executed when any item of the watched group has been changed
+
+
 ChangeDetector.compile(expression, option)
 ``````````````````````````````````
 Compile an expression
