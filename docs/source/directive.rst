@@ -39,9 +39,16 @@ There is also a short variant for events:
 Controls
 --------
 
+* al-model - two-way binding to user input elements (`Example <https://jsfiddle.net/lega911/2rzLrxgr/>`_). This directive is a proxy for al-checked, al-radio, al-value and al-select.
+
 * `al-checked <directive/al-checked.html>`_, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
 * al-radio `sample1 <http://jsfiddle.net/lega911/261djg3j/>`_ `sample2 <http://jsfiddle.net/lega911/ej80e9r4/>`_
 * `al-value <directive/al-value.html>`_, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
+* al-select + al-option, `example <http://jsfiddle.net/lega911/ac0L7paa/>`_
+
+Attributes
+----------
+
 * al-disable
 * al-enable
 * al-focused, two-way bind for focus events. `Sample <http://jsfiddle.net/lega911/LZ5jP/>`_
@@ -66,7 +73,6 @@ Special directives
 * `al-src <directive/al-src.html>`_
 * `al-stop <directive/al-stop.html>`_, stops a bind process for the element and his children.
 * al-text, `example <http://jsfiddle.net/lega911/mvd5Lhem/>`_
-* al-select + al-option, `example <http://jsfiddle.net/lega911/ac0L7paa/>`_
 
 Bind-once
 ---------
