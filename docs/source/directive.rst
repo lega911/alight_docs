@@ -5,6 +5,21 @@ Directives
 Events
 ------
 
+Binding events to an element can be done using one of the following directives:
+
+.. code-block:: html
+    :caption: Example with al-click
+
+  <button al-click="myScopeFunction($event)">Click me</button>
+
+There is also a short variant for events:
+
+.. code-block:: html
+    :caption: Example with @click
+
+  <button @click="myScopeFunction($event)">Click me</button>
+
+
 * `al-click <directive/al-click.html>`_, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
 * al-dblclick
 * al-submit, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
