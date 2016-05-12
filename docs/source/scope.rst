@@ -17,16 +17,38 @@ Set the tracking variable. Also you can track system events, it returns object w
 * **"$finishScanOnce"**
 * **"$onScanOnce"** - the callback is called in scan loop
 
+**Callback:**
+
+The callback is called with two parameters. The first parameter contains the object after it has been changed, the second parameter contains the object before it has been changed. If the watched variable is not initialized, the second parameter is undefined.
+
 **Option:**
 
 * **option** = true or **option.isArray** = true - watch an array
 * **option.readOnly** = true - You can use it if the *callback* doesn't modify the scope. (an optimization option).
-* **option.deep** = true - a deep comparison for the object.
+* **option.deep** = true | integer - a deep comparison for the object, watches 10 hierarchy depth levels by default, as alternative an integer which contains the depth of levels to watch.
 * **option.isArray**
 * **option.OneTime**
 * **option.onStop**
 
 *Optimization tip*: If *callback* returns '$scanNoChanges' then $scan will not run extra-loop (like readonly watch)
+
+
+Scope.$watchGroup(expression, callback)
+``````````````````````````````````
+
+Watches a group of expressions.
+There are two approaches which can be used:
+
+1. It returns a group object. You need to manually add more watcher objects to the group (`Example <https://jsfiddle.net/lega911/8om4ur4f/>`_).
+2. Use an array as expression and watch it's items (`Example <https://jsfiddle.net/lega911/8nvb24uy/>`_).
+
+**expression**:
+
+* array of <expressions> - items which will be watched
+
+**callback**
+
+* will be executed when any item of the watched group has been changed
 
 
 Scope.$compile(expression, option)
