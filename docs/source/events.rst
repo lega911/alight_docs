@@ -6,7 +6,8 @@ A way to bind events.
 .. code-block:: html
    :caption: Syntax
 
-   @eventname.modifier="expression"
+   <div al-on.eventname.modifier="expression"> </div>
+   <div @eventname.modifier="expression"> </div>
 
 
 Modifiers for keydown, keypress, keyup
@@ -31,6 +32,8 @@ Available arguments in expressions: **$event, $element, $value**
 Examples
 ````````
 
+* al-on.keyup="onKeyup($event)"
+* al-on.keydown.tab="onTab()"
 * @keyup="onKeyup($event)"
 * @keyup="key=$event.keyCode"
 * @keydown.tab="onTab()"

@@ -1,4 +1,4 @@
-Bootstrap
+alight.bootstrap
 ================
 
 A few ways to bind DOM.

@@ -8,7 +8,7 @@ Angular Light
 
 Contents:
 
-* `How to bind HTML <bootstrap.html>`_
+* `How to bind HTML <binding_to_dom.html>`_
 * `How to bind events <events.html>`_
 * How to bind attributes
 * `How to attach templates <directive/html.html>`_
