@@ -8,6 +8,14 @@ Angular Light
 
 Contents:
 
+* `How to bind HTML <bootstrap.html>`_
+* `How to bind events <events.html>`_
+* How to bind attributes
+* `How to attach templates <directive/html.html>`_
+* `Collection of examples <http://angularlight.org/doc/examples.html>`_
+
+Contents 2:
+
 .. toctree::
    :maxdepth: 1
 
@@ -32,8 +40,6 @@ Contents:
    directive_preprocessor.rst
    migration_to12.rst
    faq.rst
-
-`Examples <http://angularlight.org/doc/examples.html>`_
 
 .. raw:: html
    :file: discus.html
