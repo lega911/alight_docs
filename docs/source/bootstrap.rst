@@ -1,7 +1,7 @@
-alight.bootstrap
+Bootstrap
 ================
 
-It lets you a few ways to bind DOM.
+A few ways to bind DOM.
 
 Binding to all elements with attribute [al-app]
 ```````````````````````````````````````````````

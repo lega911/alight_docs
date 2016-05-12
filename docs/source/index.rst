@@ -13,6 +13,7 @@ Contents:
 
    api.rst
    bootstrap.rst
+   events.rst
    controller.rst
    scope.rst
    change_detector.rst
