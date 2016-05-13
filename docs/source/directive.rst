@@ -1,6 +1,5 @@
 Directives
-==================
-
+==========
 
 Events
 ------
@@ -73,6 +72,7 @@ Special directives
 * `al-src <directive/al-src.html>`_
 * `al-stop <directive/al-stop.html>`_, stops a bind process for the element and his children.
 * al-text, `example <http://jsfiddle.net/lega911/mvd5Lhem/>`_
+* `al-attr <directive/attr.html>`_
 
 Bind-once
 ---------

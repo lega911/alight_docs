@@ -4,7 +4,7 @@ A few ways to bind a model to the DOM
 1. Manual binding
 --------------------------------
 
-.. code-block:: html
+.. code-block:: xml
     :caption: html
 
     <div id="app">
@@ -30,7 +30,7 @@ Make Scope, then bind it to the DOM with **alight.bind**
 
 **alight.bootstrap** is called on start system, it takes each element with **al-app** and execute **alight.applyBindings**
 
-.. code-block:: html
+.. code-block:: xml
     :caption: html
 
     <div al-app al-init="title='Hello!'">
@@ -46,7 +46,7 @@ Make Scope, then bind it to the DOM with **alight.bind**
 
 You can bind custom elements with **alight.bootstrap**
 
-.. code-block:: html
+.. code-block:: xml
     :caption: html
 
     <div id="app" al-init="title='Hello!'">
@@ -66,7 +66,7 @@ You can bind custom elements with **alight.bootstrap**
 4. To bind to element with no DOM
 ---------------------------------
 
-.. code-block:: html
+.. code-block:: xml
     :caption: html
 
     <div id="app"></div>
@@ -90,7 +90,7 @@ You can bind custom elements with **alight.bootstrap**
 5. Manual binding #2
 --------------------
 
-.. code-block:: html
+.. code-block:: xml
     :caption: html
 
     <div id="app">

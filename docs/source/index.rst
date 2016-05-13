@@ -10,7 +10,7 @@ Contents:
 
 * `How to bind HTML <binding_to_dom.html>`_
 * `How to bind events <events.html>`_
-* How to bind attributes
+* `How to bind attributes <directive/attr.html>`_
 * `How to attach templates <directive/html.html>`_
 * `Collection of examples <http://angularlight.org/doc/examples.html>`_
 

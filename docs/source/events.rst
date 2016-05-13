@@ -3,7 +3,7 @@ Events
 
 A way to bind events.
 
-.. code-block:: html
+.. code-block:: xml
    :caption: Syntax
 
    <div al-on.eventname.modifier="expression"> </div>
