@@ -20,6 +20,11 @@ Overview
     <div :html.url="link"></div>
     <div :html.url.tpl="/tpls/{{link}}.html"></div>
 
+.. code-block:: xml
+    :caption: Container-less mode, without parent element
+
+    <!-- directive: :html.id.literal example -->
+
 Modifiers
 ---------
 
@@ -49,6 +54,7 @@ Examples
 
 * `Modifier "inline" displays a tree <http://jsfiddle.net/lega911/qbw5uhw3/>`_
 * `Custom modifier "markdown" <http://jsfiddle.net/lega911/n67w47k8/>`_
+* `Example of container-less mode <http://jsfiddle.net/lega911/2anr8w4v/>`_
 
 .. raw:: html
    :file: ../discus.html

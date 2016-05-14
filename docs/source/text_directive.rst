@@ -31,8 +31,10 @@ Input arguments
 * **callback**   - a function to set a value
 * **expression** - expression of directive
 * **scope**      - scope
-* env. **finally** - a function to set the final value, after that $watch will be removed.
-* env.**setter** = callback
+* extra functional
+ * env. **finally** - a function to set the final value, after that $watch will be removed.
+ * env. **setter** = callback
+ * env. **setterRaw** = send value directly
 
 
 Examples
@@ -40,6 +42,7 @@ Examples
 
 * `Information output delay <http://jsfiddle.net/lega911/Y6QA4/>`_
 * `An counter <http://jsfiddle.net/lega911/es8ph/>`_
+* `An counter with setterRaw <http://jsfiddle.net/lega911/nL8xqctv/>`_
 * `Sample with bindonce <http://jsfiddle.net/lega911/Q4cnM/>`_
 
 .. raw:: html
