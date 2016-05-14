@@ -31,7 +31,7 @@ Input arguments
 * **callback**   - a function to set a value
 * **expression** - expression of directive
 * **scope**      - scope
-* extra functional
+* **env**        - extra functional
  * env. **finally** - a function to set the final value, after that $watch will be removed.
  * env. **setter** = callback
  * env. **setterRaw** = send value directly
