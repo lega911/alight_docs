@@ -19,8 +19,6 @@ Overview
     <li al-repeat="item in list track by item.id"></li>
     <li al-repeat="item in list track by $index"></li>
     <li al-repeat="item in list" al-controller="Controller"></li>
-    <li al-repeat="item in list | filter store to filteredList"></li>
-    <li al-repeat="item in list | filter track by $index store to filteredList"></li>
 
 .. code-block:: html
     :caption: Bind to comment
@@ -39,7 +37,6 @@ Overview
     <div al-repeat="(key,value) in user">
     <div al-repeat="(key,value) in user orderBy:key,reverse">
     <div al-repeat="(key,value) in user | some_filter orderBy:'key',reverse">
-    <div al-repeat="(key,value) in user | some_filter orderBy:'key',reverse store to filteredList">
 
 Description of attributes
 -------------------------
@@ -48,7 +45,8 @@ Description of attributes
 * list - a source list
 * filter - filters for the data
 * track by - choose way to bind elements of the list to scope
-* store to - store the resulting list to the scope
+
+al-repeat has not supported "store to" anymore, you can use filter "storeTo" instead, `Example <http://jsfiddle.net/lega911/yvrk2490/>`_ 
 
 Example
 -------
@@ -82,7 +80,7 @@ Examples
 
 * `Sample with a filter <http://jsfiddle.net/lega911/vyEcA/>`_
 * `Sample with a generator <http://jsfiddle.net/lega911/v2uf2/>`_
-* `Sample with "store to variable" <http://jsfiddle.net/lega911/FVDJj/>`_
+* `Sample with "storeTo variable" <http://jsfiddle.net/lega911/yvrk2490/>`_
 * `Sample with animation <http://jsfiddle.net/lega911/A5Vsk/>`_
 * `Comment binding <http://jsfiddle.net/lega911/mdt498e8/>`_
 * `Iteration over an object <http://jsfiddle.net/lega911/nnk02xpy/>`_
