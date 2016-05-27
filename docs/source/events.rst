@@ -13,7 +13,7 @@ A way to bind events.
 Modifiers for keydown, keypress, keyup
 ``````````````````````````````````````
 
-* Filter by extra key: alt, control, meta, shift
+* Filter by extra key: alt, ctrl (control), meta, shift
 * Filter by keycode: enter, tab, delete, backspace, esc, space, up, down, left, right, <any number of key code>
 
 Special modifiers for all events
@@ -64,14 +64,15 @@ It lets you:
 .. code-block:: javascript
    :caption: A few ways to make aliases
 
-    alight.hooks.events.modifier['enter'] = 'keydown blur';
-    alight.hooks.events.modifier['enter'] = ['keydown', 'blur'];
-    alight.hooks.events.modifier['enter'] = (event, env) => {}
-    alight.hooks.events.modifier['enter'] = {
-      event: 'keydown blur',  // can be omitted
-      fn: (event, env) => {}  // can be omitted
+    alight.hooks.eventModifier['enter'] = 'keydown blur';
+    alight.hooks.eventModifier['enter'] = ['keydown', 'blur'];
+    alight.hooks.eventModifier['enter'] = (event, env) => {}
+    alight.hooks.eventModifier['enter'] = {
+      event: 'keydown blur',        // can be omitted
+      fn: (event, env) => {}        // can be omitted
+      init: (scope, element) => {}  // can be omitted
     }
-    alight.hooks.events.modifier['enter'] = {
+    alight.hooks.eventModifier.enter = {
       event: ['keydown', 'blur'],
       fn: (event, env) => {
         env.stop = true;  // stop the event
