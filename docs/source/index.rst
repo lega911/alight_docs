@@ -38,6 +38,7 @@ Contents 2:
    namespace.rst
    binding_to_dom.rst
    directive_preprocessor.rst
+   component.rst
    migration_to12.rst
    faq.rst
 
