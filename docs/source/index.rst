@@ -8,7 +8,7 @@ Angular Light
 
 Contents:
 
-* `Alight in 6 steps <docs0.html>`_
+* `Alight in 7 steps <docs0.html>`_
 * `How to bind HTML <binding_to_dom.html>`_
 * `How to bind events <events.html>`_
 * `How to bind attributes <directive/attr.html>`_

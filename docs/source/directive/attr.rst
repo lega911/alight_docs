@@ -15,6 +15,15 @@ A way to set value for attribute/propery of element
     <img :src="linkToImage" />
 
 
+Style and class:
+
+.. code-block:: xml
+    :caption: Examples
+
+    <div :class.red="redDiv"></div>
+    <div :style.border-color="color"></div>
+
+
 .. code-block:: xml
     :caption: Expression as template
 
