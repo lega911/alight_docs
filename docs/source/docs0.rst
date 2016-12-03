@@ -25,19 +25,17 @@ There is a few ways to bind:
 3. How to listen events
 -----------------------
 
-You can bind any events using syntax ``al-on.event.modifier="expression"`` or shorter version ``@event.modifier="expression"``, example:
+You can bind any events using syntax ``al-on.event.modifier="expression"`` or shorter version ``@event.modifier="expression"``
 
 .. code-block:: xml
-    :caption: html
+    :caption: Example
 
     <button al-on.click="onClick()"></button>
     <button @click="onClick()"></button>
 
 
-Also you can use different modifiers, example:
-
 .. code-block:: xml
-    :caption: html
+    :caption: Also you can use different modifiers, example
 
     <input @keydown.left="goLeft()" />
     <div @mousemove.throttle-300="moveWithDelay()"></div>
@@ -48,10 +46,10 @@ More information and examples is `here <events.html>`_.
 4. Set attributes
 -----------------
 
-You can change value of any attribute using ``al-attr.attrName.modifier="value"`` or shorter version ``:attrName.modifier="value"``, example:
+You can change value of any attribute using ``al-attr.attrName.modifier="value"`` or shorter version ``:attrName.modifier="value"``
 
 .. code-block:: xml
-    :caption: Examples
+    :caption: Example
 
     <input al-attr.hidden="value" />
     <input :hidden="value" />
@@ -61,10 +59,8 @@ You can change value of any attribute using ``al-attr.attrName.modifier="value"`
     <img :src="linkToImage" />
 
 
-Style and class:
-
 .. code-block:: xml
-    :caption: Examples
+    :caption: Style and class
 
     <div :class.red="redDiv"></div>
     <div :style.border-color="color"></div>
@@ -91,10 +87,8 @@ Set and get value of an element, you can use directives:
     * al-focused
     * al-select
 
-Example:
-
 .. code-block:: xml
-    :caption: Expression as template
+    :caption: Example
 
     <input type="text" al-value="title" /> {{title}}
     <input type="checkbox" al-checked="model" />
@@ -103,7 +97,7 @@ Example:
 6. How to call function/code
 ----------------------------
 
-    1. You can use directive **al-init**, to call js* expression, e.g. ``al-init="count=7; foo(count);"``, `read more <directive/al-init.html>`_
+    1. You can use directive **al-init**, to call JS* expression, e.g. ``al-init="count=7; foo(count);"``, `read more <directive/al-init.html>`_
     2. direct-directive
 
 
