@@ -3,12 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Angular Light
+Alight.js
 ==================================
+
+Main functional, read `Alight in 7 steps <docs0.html>`_
 
 Contents:
 
-* `Alight in 7 steps <docs0.html>`_
 * `How to bind HTML <binding_to_dom.html>`_
 * `How to bind events <events.html>`_
 * `How to bind attributes <directive/attr.html>`_
