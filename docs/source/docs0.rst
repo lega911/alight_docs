@@ -98,7 +98,7 @@ Set and get value of an element, you can use directives:
 ----------------------------
 
     1. You can use directive **al-init**, to call JS* expression, e.g. ``al-init="count=7; foo(count);"``, `read more <directive/al-init.html>`_
-    2. direct-directive
+    2. Call a function from HTML, `direct-directive <direct-directive.html>`_
 
 
 7. Manipulate blocks
