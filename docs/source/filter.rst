@@ -10,7 +10,7 @@ date
 .. code-block:: html
     :caption: example
 
-    <div>{{when | date:yyyy-mm-dd }}</div>
+    <div>{{when | date 'yyyy-mm-dd' }}</div>
 
 filter
 ------
@@ -29,8 +29,8 @@ slice
 .. code-block:: html
     :caption: example
 
-    <div al-repeat="it in list | slice:a"></div>
-    <div al-repeat="it in list | slice:a,b"></div>
+    <div al-repeat="it in list | slice a"></div>
+    <div al-repeat="it in list | slice a,b"></div>
 
 
 toArray
@@ -42,7 +42,7 @@ toArray
 .. code-block:: html
     :caption: example
 
-    <div al-repeat="item in object | toArray:key,value track by key">
+    <div al-repeat="item in object | toArray key,value track by key">
 
 `Example <http://jsfiddle.net/lega911/nnk02xpy/>`_
 
@@ -55,7 +55,7 @@ orderBy
 .. code-block:: html
     :caption: example
 
-    <div al-repeat="item in array | orderBy:key,reverse">
+    <div al-repeat="item in array | orderBy key,reverse">
 
 `Example <http://jsfiddle.net/lega911/nnk02xpy/>`_
 
@@ -69,7 +69,7 @@ throttle
     :caption: example
 
     <input al-value="link" type="text" />
-    <p>{{link | throttle:300 | loadFromServer}}</p>
+    <p>{{link | throttle 300 | loadFromServer}}</p>
 
 `Example <http://jsfiddle.net/lega911/8fnh56op/>`_
 
@@ -83,6 +83,16 @@ json
 
     {{data.value | json}}
     {{this | json}}
+
+storeTo
+----
+
+* store result value to scope
+
+.. code-block:: html
+    :caption: example
+
+    {{data.value | modifier | storeTo key}}
 
 .. raw:: html
    :file: discus.html

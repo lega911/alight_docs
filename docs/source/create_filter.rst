@@ -4,16 +4,16 @@ Create filters
 Overview
 --------
 
-A filter should be placed in **alight.filters**, or in scope.$ns for private filters.
+A filter can be placed in **scope** or in **alight.filters**, you can return Promise for deferred call.
 
 .. code-block:: javascript
     :caption: Example filter
 
-    alight.filters.double = function(value, expression, scope) {
-    	return value + expression + value
+    alight.filters.wrap = function(value, text) {
+        return text + value + text
     }
 
-`Example on jsfiddle <http://jsfiddle.net/lega911/chbysp0a/>`_
+`Example on jsfiddle <https://jsfiddle.net/lega911/4wLwx1n3/>`_
 
 Input arguments
 ---------------

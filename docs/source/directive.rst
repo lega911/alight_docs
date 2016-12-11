@@ -1,40 +1,6 @@
 Directives
 ==========
 
-Events
-------
-
-Binding events to an element can be done using one of the following directives:
-
-.. code-block:: html
-    :caption: Example with al-click
-
-  <button al-click="myScopeFunction($event)">Click me</button>
-
-There is also a short variant for events:
-
-.. code-block:: html
-    :caption: Example with @click
-
-  <button @click="myScopeFunction($event)">Click me</button>
-
-
-* `al-click <directive/al-click.html>`_, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
-* al-dblclick
-* al-submit, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
-* al-blur, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-change, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-focus, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-keydown, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-keypress, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-keyup, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-mousedown, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-mouseenter, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-mouseleave, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-mousemove, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-mouseover, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-* al-mouseup, `Sample <http://jsfiddle.net/lega911/e8m9y/>`_
-
 Controls
 --------
 
@@ -45,44 +11,17 @@ Controls
 * `al-value <directive/al-value.html>`_, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_
 * al-select + al-option, `example <http://jsfiddle.net/lega911/ac0L7paa/>`_
 
-Attributes
-----------
-
-* al-disable
-* al-enable
-* al-focused, two-way bind for focus events. `Sample <http://jsfiddle.net/lega911/LZ5jP/>`_
-* al-readonly
-
 Special directives
 ------------------
 
 * `al-app <directive/al-app.html>`_, init application with current element, `examples </doc/examples.html#search=al-app>`_
-* `al-ctrl <controller.html>`_
 * al-cloak, hide current element until activate the application, `examples </doc/examples.html#search=al-cloak>`_
-* `al-class/al-css <directive/al-css.html>`_, `todo sample <http://jsfiddle.net/lega911/RhAgX/>`_, `animated sample <http://jsfiddle.net/lega911/wRL9k/>`_
-* **al-style** `examples </doc/examples.html#search=al-style>`_
-* **al-show**, `sample with animation <http://plnkr.co/edit/84YElx?p=preview>`_
-* al-hide, `sample with animation <http://plnkr.co/edit/84YElx?p=preview>`_
 * `al-html <directive/html.html>`_
 * **al-if**, `sample with animation <http://jsfiddle.net/lega911/9v2DY/>`_
 * al-ifnot, `sample with animation <http://jsfiddle.net/lega911/9v2DY/>`_
-* **al-include**, loads a html block from the server, `sample with animation <http://plnkr.co/edit/9Pbg5e?p=preview>`_
 * `al-init <directive/al-init.html>`_
 * `al-repeat <directive/al-repeat.html>`_
-* `al-src <directive/al-src.html>`_
 * `al-stop <directive/al-stop.html>`_, stops a bind process for the element and his children.
-* al-text, `example <http://jsfiddle.net/lega911/mvd5Lhem/>`_
-* `al-attr <directive/attr.html>`_
-
-Bind-once
----------
-
-* bo-if
-* bo-ifnot
-* bo-src
-* `bo-switch <directive/bo-switch.html>`_
-* `bo-switchDefault <directive/bo-switch.html>`_
-* `bo-switchWhen <directive/bo-switch.html>`_
 
 .. raw:: html
    :file: discus.html

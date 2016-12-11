@@ -22,26 +22,21 @@ Contents 2:
    :maxdepth: 1
 
    api.rst
-   bootstrap.rst
    events.rst
-   controller.rst
-   scope.rst
+   direct-directive.rst
    change_detector.rst
    create_directive.rst
    inheritance_directive.rst
    directive.rst
    filter.rst
    create_filter.rst
-   async_filter.rst
    text_binding.rst
    text_directive.rst
    one_time_binding.rst
    isolated_mode.rst
-   namespace.rst
    binding_to_dom.rst
    directive_preprocessor.rst
    component.rst
-   migration_to12.rst
    faq.rst
 
 .. raw:: html
